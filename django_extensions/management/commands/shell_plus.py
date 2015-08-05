@@ -296,7 +296,7 @@ class Command(NoArgsCommand):
             supported_backends = ['django.db.backends.postgresql_psycopg2']
             opt_name = 'fallback_application_name'
             default_app_name = 'django_shell'
-
+            app_name = None
             dbs = getattr(settings, 'DATABASES', [])
 
             # lookup over all the databases entry
